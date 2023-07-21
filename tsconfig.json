@@ -1,29 +1,3 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "jsx": "preserve",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "lib": ["ESNext", "DOM"],
-    "skipLibCheck": true,
-    "noEmit": true,
-    "allowSyntheticDefaultImports": true,
-    "types": ["vite-plugin-electron/electron-env", "node"],
-    "paths": {
-      "@/*": ["./src/*"],
-      "@unml/core": ["./packages/core/src/index.ts"],
-      "@unml/extensions": ["./packages/extensions/src/index.ts"],
-      "@unml/schema": ["./packages/schema/src/index.ts"],
-      "@unml/kit": ["./packages/kit/src/index.ts"],
-      "@unml/client": ["./packages/client/src/index.ts"],
-      "@unml/constants": ["./packages/constants/src/index.ts"],
-      "@unml/utils/client": ["./packages/utils/src/client.ts"],
-      "@unml/utils": ["./packages/utils/src/index.ts"]
-    }
-  }
+  "extends": "./.nuxt/tsconfig.json"
 }

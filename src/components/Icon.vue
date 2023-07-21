@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
+import { Icon as IconifyIcon } from "@iconify/vue";
 
 const props = defineProps<{
   type: "html" | "iconify";
@@ -9,5 +9,9 @@ const props = defineProps<{
 
 <template>
   <span v-if="props.type === 'html'" v-html="props.icon" />
-  <Icon v-else-if="props.type === 'iconify'" :icon="props.icon" text-2xl />
+  <IconifyIcon
+    v-else-if="props.type === 'iconify'"
+    :icon="props.icon"
+    text-2xl
+  />
 </template>

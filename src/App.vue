@@ -1,7 +1,14 @@
+<script setup lang="ts">
+import { handleExtensions } from "./extensions";
+
+import "./styles/main.scss";
+
+handleExtensions();
+</script>
+
 <template>
-  <RouterView v-slot="{ Component }">
-    <Suspense>
-      <Component :is="Component" />
-    </Suspense>
-  </RouterView>
+  <NuxtLayout>
+    <NuxtLoadingIndicator />
+    <NuxtPage />
+  </NuxtLayout>
 </template>

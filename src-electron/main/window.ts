@@ -4,18 +4,19 @@ import { join } from "node:path";
 import type { WebPreferences } from "electron";
 import { BrowserWindow, app, shell } from "electron";
 
-process.env.DIST_ELECTRON = join(__dirname, "..");
-process.env.DIST = join(process.env.DIST_ELECTRON, "../dist");
-process.env.PUBLIC = process.env.VITE_DEV_SERVER_URL
-  ? join(process.env.DIST_ELECTRON, "../public")
-  : process.env.DIST;
+process.env.ROOT = join(__dirname, "..");
+process.env.DIST = join(process.env.ROOT, "dist-electron");
+process.env.VITE_PUBLIC = process.env.VITE_DEV_SERVER_URL
+  ? join(process.env.ROOT, "public")
+  : join(process.env.ROOT, ".output/public");
+process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = "true";
 
 const TITLE = "UNML";
-const ICON = join(process.env.PUBLIC, "favicon.ico");
+const ICON = join(process.env.VITE_PUBLIC, "favicon.ico");
 const WIDTH = 1000;
 const HEIGHT = 750;
-const preload = join(__dirname, "../preload/index.js");
-const url = process.env.VITE_DEV_SERVER_URL;
+const preload = join(__dirname, "./preload.js");
+const url = process.env.VITE_DEV_SERVER_URL!;
 const indexHtml = join(process.env.DIST, "index.html");
 const WEB_PREFERENCES: WebPreferences = {
   preload,

@@ -1,4 +1,6 @@
+import { API_VAR } from "@unml/constants";
+
 export function handleExtensions() {
   const client = useClient();
-  window.__UNML_API__.onCallClientCommand(client.callClientCommand);
+  window[API_VAR].onCallClientCommand(client.callClientCommand);
 }

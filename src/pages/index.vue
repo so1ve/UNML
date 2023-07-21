@@ -1,5 +1,3 @@
-<script setup lang="ts">
-const { t } = useI18n();
-</script>
+<script setup lang="ts"></script>
 
-<template>Home {{ t("aaa") }}</template>
+<template>Home</template>

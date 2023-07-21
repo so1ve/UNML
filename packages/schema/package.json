@@ -39,6 +39,7 @@
     "stub": "unbuild --stub"
   },
   "dependencies": {
+    "@so1ve/utils": "^0.3.0",
     "hookable": "^5.5.3"
   }
 }

@@ -9,12 +9,13 @@ type Props = BaseProps & InstanceType<typeof VListItem>["$props"];
 
 const props = defineProps<BaseProps>() as Props;
 const route = useRoute();
+const tabPath = getTabPath(props.tab);
 const currentPath = computed(() => route.path);
 </script>
 
 <template>
   <VListItem
-    :active="getTabPath(props.tab) === currentPath"
+    :active="tabPath === currentPath"
     active-class="v-list-item--active text-green"
     :to="getTabPath(props.tab)"
   >

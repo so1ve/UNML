@@ -1,12 +1,10 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib",
   "json.schemas": [
     {
       "fileMatch": ["/*electron-builder.json5", "/*electron-builder.json"],
       "url": "https://json.schemastore.org/electron-builder"
     }
   ],
-  "i18n-ally.localesPaths": ["./src/locales"],
-  "i18n-ally.sourceLanguage": "zh-CN",
+  "i18n-ally.localesPaths": ["src/locales"],
   "i18n-ally.keystyle": "nested"
 }
