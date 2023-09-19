@@ -42,7 +42,7 @@ onMounted(() => {
         injectClient();
         iframeEl.value!.style.opacity = "1";
       };
-    } catch (e) {
+    } catch {
       iframeEl.value.style.opacity = "1";
     }
     document.body.appendChild(iframeEl.value);
@@ -66,7 +66,7 @@ function injectClient() {
   try {
     // TODO
     iframeEl.value.contentWindow[IFRAME_CLIENT_VAR] = useClient();
-  } catch (e) {}
+  } catch {}
 }
 
 function updateIframeBox() {
