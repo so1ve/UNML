@@ -34,8 +34,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(prettier@3.1.1)
       '@so1ve/utils':
-        specifier: ^0.2.2
-        version: 0.2.2
+        specifier: ^0.3.0
+        version: 0.3.0
       '@types/node':
         specifier: ^18.16.12
         version: 18.19.3
@@ -1811,10 +1811,12 @@ packages:
       prettier: 3.1.1
     dev: true
 
-  /@so1ve/utils@0.2.2:
-    resolution: {integrity: sha512-zgRLPHyuiJHb/u+4y/l9J5x1XwpE267tL07QeBceAi3oB30ho89qRiN1PVQ4esWS7XLGpkcjQ1JYUbeC/E8Psg==}
+  /@so1ve/utils@0.3.0:
+    resolution: {integrity: sha512-ZR/gCqvgdX9TcIAgZ2MvleGP+uNMrkQ8J40pJHUslg3inepdWbk/Fu5ddqVJp0QKFRAZUKGzgJnEbJ6xdNMKmQ==}
     dependencies:
+      '@types/throttle-debounce': 5.0.2
       escape-goat: 4.0.0
+      throttle-debounce: 5.0.0
     dev: true
 
   /@swc/helpers@0.4.14:
@@ -1974,6 +1976,10 @@ packages:
 
   /@types/supports-color@8.1.3:
     resolution: {integrity: sha512-Hy6UMpxhE3j1tLpl27exp1XqHD7n8chAiNPzWfz16LPZoMMoSc4dzLl6w9qijkEb/r5O1ozdu1CWGA2L83ZeZg==}
+    dev: true
+
+  /@types/throttle-debounce@5.0.2:
+    resolution: {integrity: sha512-pDzSNulqooSKvSNcksnV72nk8p7gRqN8As71Sp28nov1IgmPKWbOEIwAWvBME5pPTtaXJAvG3O4oc76HlQ4kqQ==}
     dev: true
 
   /@types/unist@2.0.10:
@@ -8833,6 +8839,11 @@ packages:
 
   /text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
+    dev: true
+
+  /throttle-debounce@5.0.0:
+    resolution: {integrity: sha512-2iQTSgkkc1Zyk0MeVrt/3BvuOXYPl/R8Z0U2xxo9rjwNciaHDG3R+Lm6dh4EeUci49DanvBnuqI6jshoQQRGEg==}
+    engines: {node: '>=12.22'}
     dev: true
 
   /tiny-inflate@1.0.3:
