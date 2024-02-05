@@ -22,8 +22,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(vue@3.4.15)
       '@intlify/unplugin-vue-i18n':
-        specifier: ^0.12.0
-        version: 0.12.3(rollup@3.29.4)(vue-i18n@9.9.1)
+        specifier: ^0.13.0
+        version: 0.13.0(rollup@3.29.4)(vue-i18n@9.9.1)
       '@mdi/font':
         specifier: ^7.2.96
         version: 7.4.47
@@ -1327,18 +1327,13 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /@intlify/shared@9.3.0-beta.24:
-    resolution: {integrity: sha512-AKxJ8s7eKIQWkNaf4wyyoLRwf4puCuQgjSChlDJm5JBEt6T8HGgnYTJLRXu6LD/JACn3Qwu6hM/XRX1c9yvjmQ==}
-    engines: {node: '>= 16'}
-    dev: true
-
   /@intlify/shared@9.9.1:
     resolution: {integrity: sha512-b3Pta1nwkz5rGq434v0psHwEwHGy1pYCttfcM22IE//K9owbpkEvFptx9VcuRAxjQdrO2If249cmDDjBu5wMDA==}
     engines: {node: '>= 16'}
     dev: true
 
-  /@intlify/unplugin-vue-i18n@0.12.3(rollup@3.29.4)(vue-i18n@9.9.1):
-    resolution: {integrity: sha512-0riPtSfTM58JmGNMmJho/aHD2z3K24BESYAmkLvKlo61/LbaPvnjYU1DbSbJEm6bSjE2oEjUj+di3QaYxXei/w==}
+  /@intlify/unplugin-vue-i18n@0.13.0(rollup@3.29.4)(vue-i18n@9.9.1):
+    resolution: {integrity: sha512-Mm9NhcvbsSZ5FXXnCpL/XFCk1hPp809hxErNmnwqGp21JjYOKGp3wpQSrpvGk33ZrHZbhPqAu70IEVEAxVZ5+A==}
     engines: {node: '>= 14.16'}
     peerDependencies:
       petite-vue-i18n: '*'
@@ -1353,7 +1348,7 @@ packages:
         optional: true
     dependencies:
       '@intlify/bundle-utils': 7.5.0(vue-i18n@9.9.1)
-      '@intlify/shared': 9.3.0-beta.24
+      '@intlify/shared': 9.9.1
       '@rollup/pluginutils': 5.1.0(rollup@3.29.4)
       '@vue/compiler-sfc': 3.4.15
       debug: 4.3.4
@@ -4442,6 +4437,7 @@ packages:
   /es-errors@1.0.0:
     resolution: {integrity: sha512-yHV74THqMJUyFKkHyN7hyENcEZM3Dj2a2IrdClY+IT4BFQHkIVwlh8s6uZfjsFydMdNHv0F5mWgAA3ajFbsvVQ==}
     engines: {node: '>= 0.4'}
+    requiresBuild: true
 
   /es-get-iterator@1.1.3:
     resolution: {integrity: sha512-sPZmqHBe6JIiTfN5q2pEi//TwxmAFHwj/XEuYjTuse78i8KxaqMTTzxPoFKuzRpDpTJ+0NAbpfenkmH2rePtuw==}
